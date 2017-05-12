@@ -6,6 +6,7 @@ import cas.chenhuanming.cn.authentication.PreAuthenticateAuthentication;
 import cas.chenhuanming.cn.authentication.exception.AuthenticationException;
 import cas.chenhuanming.cn.authentication.exception.ExceptionCode;
 import cas.chenhuanming.cn.ticket.Ticket;
+import cas.chenhuanming.cn.ticket.SimpleTicketManager;
 import cas.chenhuanming.cn.ticket.TicketManager;
 import cas.chenhuanming.cn.util.config.PropertiesUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;

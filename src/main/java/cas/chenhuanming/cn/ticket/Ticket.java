@@ -33,4 +33,8 @@ public class Ticket {
     public LocalDateTime getDeadline() {
         return deadline;
     }
+
+    public void setDeadline(LocalDateTime deadline) {
+        this.deadline = deadline;
+    }
 }

@@ -6,6 +6,7 @@ import cas.chenhuanming.cn.authentication.DaoAuthenticationProvider;
 import cas.chenhuanming.cn.authentication.ProviderManager;
 import cas.chenhuanming.cn.controller.CasController;
 import cas.chenhuanming.cn.controller.StandardCasController;
+import cas.chenhuanming.cn.ticket.SimpleTicketManager;
 import cas.chenhuanming.cn.ticket.TicketManager;
 
 import javax.servlet.ServletException;
@@ -24,7 +25,7 @@ public class MainServlet extends HttpServlet{
 
     public MainServlet() {
         AuthenticationProvider provider = new DaoAuthenticationProvider();
-        TicketManager ticketManager = new TicketManager();
+        TicketManager ticketManager = new SimpleTicketManager();
         AuthenticationManager authenticationManager = new ProviderManager(provider);
         casController = new StandardCasController(ticketManager,authenticationManager);
     }
